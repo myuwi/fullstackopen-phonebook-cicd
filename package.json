@@ -10,9 +10,9 @@
   "scripts": {
     "start": "node .",
     "dev": "nodemon .",
-    "build:ui": "rm -rf dist && npm run -w frontend build && cp -r frontend/dist .",
+    "build": "rm -rf dist && npm run -w frontend build && cp -r frontend/dist .",
     "deploy": "fly deploy",
-    "deploy:full": "npm run build:ui && npm run deploy",
+    "deploy:full": "npm run build && npm run deploy",
     "lint:backend": "eslint .",
     "lint:frontend": "npm run lint -w frontend",
     "lint": "npm run lint:backend && npm run lint:frontend",
