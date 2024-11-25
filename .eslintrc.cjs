@@ -15,6 +15,7 @@ module.exports = {
       },
     },
   ],
+  ignorePatterns: ["dist", "frontend", ".eslintrc.cjs"],
   parserOptions: {
     sourceType: "module",
     ecmaVersion: "latest",
